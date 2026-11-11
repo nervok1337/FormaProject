@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+zadanie-po-teme-organizatsionno-pravovye-formy-predpriyatiya-pi.md

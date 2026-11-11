@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1f2f8">
+  <meta name="description" content="Найдите подходящую форму для своего бизнеса. Простой помощник по выбору ИП, ООО и АО.">
+  <title>Форма — начало вашего бизнеса</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-3a6 6 0 0 1 12 0v3m1-16a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 5"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m7 10 5 5 5-5"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="14" rx="3"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+  </defs></svg>
+
+  <div class="ambient-field" aria-hidden="true"><div class="ambient ambient-one"></div><div class="ambient ambient-two"></div><div class="ambient ambient-three"></div></div>
+  <div class="site-wrap">
+    <header class="header">
+      <a href="#pick" class="brand" aria-label="Форма — на главную"><span class="brand-mark"><i></i><i></i><i></i></span><span>форма<span class="brand-dot">.</span></span></a>
+      <nav class="nav glass" aria-label="Основная навигация">
+        <a href="#pick" class="nav-link active" aria-current="page">Подбор формы</a>
+        <a href="#compare" class="nav-link">Сравнение</a>
+        <a href="#about" class="nav-link">Как это работает</a>
+      </nav>
+      <span class="header-note"><span class="status-dot"></span> От идеи к бизнесу</span>
+    </header>
+
+    <main>
+      <section id="pick" class="view">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="mini-line"></span> БОЛЬШОЕ НАЧИНАЕТСЯ С ПРОСТОГО</div>
+            <h1>Ваш бизнес.<br>В подходящей <span>форме.</span></h1>
+            <p>Расскажите о своей идее. Мы поможем выбрать форму<br class="desktop-break"> бизнеса и понять, почему она вам подходит.</p>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-tile tile-back">АО<span>МАСШТАБ</span></div>
+            <div class="art-tile tile-front">ООО<span>ВОЗМОЖНОСТИ</span><div class="tile-shine"></div></div>
+            <div class="art-tile tile-small">ИП<span>СВОБОДА</span></div>
+            <span class="art-spark spark-one">✧</span><span class="art-spark spark-two">+</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <section class="form-panel glass" aria-labelledby="form-title">
+            <div class="panel-heading"><div><span class="overline">НЕМНОГО О ВАШЕЙ ИДЕЕ</span><h2 id="form-title">Начнём с главного</h2></div><span class="time-pill"><span></span> ≈ 1 минута</span></div>
+            <form id="business-form">
+              <div class="field"><label for="activity"><span class="field-number">01</span> Чем вы планируете заниматься?</label>
+                <div class="select-wrap"><svg class="icon"><use href="#i-bag"/></svg><select id="activity" name="activity"><option value="services">Услуги</option><option value="trade">Торговля</option><option value="it">IT и технологии</option><option value="production">Производство</option><option value="agriculture">Сельское хозяйство</option></select><svg class="icon select-arrow"><use href="#i-chevron"/></svg></div>
+              </div>
+              <fieldset class="field"><legend><span class="field-number">02</span> Каким вы видите масштаб бизнеса?</legend>
+                <div class="segmented"><label><input type="radio" name="scale" value="small" checked><span>Малый</span></label><label><input type="radio" name="scale" value="medium"><span>Средний</span></label><label><input type="radio" name="scale" value="large"><span>Крупный</span></label></div>
+              </fieldset>
+              <div class="field founders-field"><div><label for="founders"><span class="field-number">03</span> Сколько будет учредителей?</label><p class="field-hint">Считая вас</p></div><div class="stepper"><button id="minus" type="button" aria-label="Уменьшить число учредителей">−</button><input id="founders" name="founders" type="number" min="1" max="10000" value="1" required aria-label="Количество учредителей"><button id="plus" type="button" aria-label="Увеличить число учредителей">+</button></div></div>
+              <div class="field"><label for="investment"><span class="field-number">04</span> Как вы планируете финансировать бизнес?</label><div class="select-wrap"><select id="investment" name="investment"><option value="none">Свои средства, без инвесторов</option><option value="partners">Привлечь частных инвесторов</option><option value="public">Выйти на публичный рынок акций</option></select><svg class="icon select-arrow"><use href="#i-chevron"/></svg></div></div>
+              <fieldset class="field risk-field"><legend><span class="field-number">05</span> Какой уровень ответственности вам ближе?</legend><div class="risk-options">
+                <label class="risk-option"><input type="radio" name="risk" value="personal" checked><span class="risk-content"><svg class="icon"><use href="#i-user"/></svg><strong>Готов отвечать лично</strong><small>В том числе своим имуществом</small><span class="radio-indicator"></span></span></label>
+                <label class="risk-option"><input type="radio" name="risk" value="limited"><span class="risk-content"><svg class="icon"><use href="#i-shield"/></svg><strong>Хочу ограничить риски</strong><small>В пределах участия в компании*</small><span class="radio-indicator"></span></span></label>
+              </div></fieldset>
+              <p class="risk-footnote">* Закон предусматривает исключения из ограниченной ответственности.</p>
+              <p id="form-error" class="form-error" role="alert" hidden></p>
+              <button type="submit" class="primary-button" id="submit-button"><svg class="icon"><use href="#i-spark"/></svg><span>Подобрать форму</span><svg class="icon arrow"><use href="#i-arrow"/></svg></button>
+              <div class="form-bottom"><span><svg class="icon"><use href="#i-shield"/></svg> Без регистрации и сохранения данных</span><button type="reset" class="text-button">Сбросить</button></div>
+            </form>
+          </section>
+
+          <aside class="result-column">
+            <section class="result-panel glass" id="result-panel" aria-label="Результат подбора" aria-live="polite" aria-atomic="true">
+              <div id="empty-state">
+                <div class="result-topline"><span class="overline">ВАША БУДУЩАЯ ФОРМА</span><svg class="icon"><use href="#i-spark"/></svg></div>
+                <div class="sculpture" aria-hidden="true"><div class="sculpture-glow"></div><div class="glass-shape shape-back"></div><div class="glass-shape shape-front"><span>ф.</span></div><div class="sculpture-base"></div><span class="shape-glint">✦</span></div>
+                <div class="empty-copy"><span class="soft-tag">Место для нового начала</span><h2>У каждой идеи<br>есть своя форма.</h2><p>Пять простых ответов — и здесь появится<br class="desktop-break"> рекомендация именно для вас.</p></div>
+                <div class="empty-divider"></div><div class="empty-features"><span><svg class="icon"><use href="#i-check"/></svg> Понятное объяснение</span><span><svg class="icon"><use href="#i-check"/></svg> Сравнение вариантов</span><span><svg class="icon"><use href="#i-check"/></svg> Следующий шаг</span></div>
+              </div>
+              <div id="recommendation" hidden></div>
+            </section>
+            <button type="button" class="example-card glass" id="example-button"><span class="example-icon"><svg class="icon"><use href="#i-spark"/></svg></span><span><strong>Сначала посмотреть пример?</strong><small>IT-студия с двумя основателями</small></span><svg class="icon"><use href="#i-arrow"/></svg></button>
+            <p class="aside-note"><svg class="icon"><use href="#i-info"/></svg><span>Помогаем сориентироваться. Итоговый выбор<br class="desktop-break"> стоит обсудить с юристом и бухгалтером.</span></p>
+          </aside>
+        </div>
+        <div class="bottom-strip"><span>Меньше сложных терминов. Больше ясности.</span><a href="#compare">Чем отличаются ИП, ООО и АО <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+      </section>
+
+      <section id="compare" class="view" hidden>
+        <div class="page-heading"><div class="eyebrow"><span class="mini-line"></span> ВСЁ НА СВОИХ МЕСТАХ</div><h1>Разные формы.<br><span>Ваш выбор.</span></h1><p>Сравните главное и найдите структуру под свои задачи.</p></div>
+        <div class="comparison-cards">
+          <article class="comparison-card glass"><span class="form-type type-mint">ИП</span><h2>Начать самому</h2><p>Для самостоятельного бизнеса с простым управлением.</p><span class="comparison-capital">Без уставного капитала</span></article>
+          <article class="comparison-card glass"><span class="form-type type-blue">ООО</span><h2>Расти вместе</h2><p>Для одного владельца или команды партнёров.</p><span class="comparison-capital">Капитал от 10 000 ₽</span></article>
+          <article class="comparison-card glass"><span class="form-type type-purple">АО</span><h2>Мыслить масштабно</h2><p>Для инвестиций через акции и большого числа участников.</p><span class="comparison-capital">Капитал от 10 000 ₽</span></article>
+          <article class="comparison-card glass"><span class="form-type type-peach">ПАО</span><h2>Открыть капитал</h2><p>Для публичного размещения и обращения акций.</p><span class="comparison-capital">Капитал от 100 000 ₽</span></article>
+        </div>
+        <div class="table-panel glass" tabindex="0" role="region" aria-label="Сравнительная таблица, можно прокрутить горизонтально"><table><caption class="sr-only">Сравнение форм бизнеса</caption><thead><tr><th scope="col">Что важно</th><th scope="col">ИП</th><th scope="col">ООО</th><th scope="col">Непубличное АО</th><th scope="col">ПАО</th></tr></thead><tbody>
+          <tr><th scope="row">Владельцы</th><td>Один человек</td><td>1–50 участников</td><td>Один или несколько</td><td>Один или несколько</td></tr>
+          <tr><th scope="row">Ответственность</th><td>Личным имуществом¹</td><td>В пределах долей²</td><td>В пределах акций²</td><td>В пределах акций²</td></tr>
+          <tr><th scope="row">Инвестиции в капитал</th><td>Нет долей или акций</td><td>Через доли</td><td>Через акции</td><td>В том числе публично</td></tr>
+          <tr><th scope="row">Управление и учёт</th><td>Проще</td><td>Умеренная сложность</td><td>Реестр и выпуск акций</td><td>Больше требований</td></tr>
+          <tr><th scope="row">Спецрежимы</th><td>УСН, ПСН и другие³</td><td>УСН, ЕСХН и другие³</td><td>Возможны при условиях³</td><td>Проверяются отдельно³</td></tr>
+        </tbody></table></div>
+        <div class="comparison-notes"><p>¹ Кроме имущества, на которое по закону нельзя обратить взыскание. ² По общему правилу; возможны субсидиарная ответственность и личные поручительства. ³ Доступность зависит от всех условий режима, включая деятельность и показатели бизнеса.</p><p>Для отдельных видов деятельности возможны специальные требования к форме и капиталу. Публичный статус АО требует отдельной процедуры.</p><a class="inline-link" href="#about">Источники и принципы подбора <svg class="icon"><use href="#i-arrow"/></svg></a></div>
+        <a href="#pick" class="primary-button compare-cta">Найти свою форму <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </section>
+
+      <section id="about" class="view" hidden>
+        <div class="page-heading"><div class="eyebrow"><span class="mini-line"></span> ПРОЗРАЧНО В КАЖДОЙ ДЕТАЛИ</div><h1>Простой выбор.<br><span>Понятная логика.</span></h1><p>Никакой магии. Только ваши задачи и объяснимые правила.</p></div>
+        <div class="about-grid"><article class="about-card glass"><span class="step-label">01 / РАССКАЖИТЕ ОБ ИДЕЕ</span><h2>Пять ответов о главном</h2><p>Выберите деятельность, масштаб, число учредителей, источник инвестиций и допустимую ответственность. Затем нажмите «Подобрать форму».</p><p>Для совместного владения ИП исключается. При числе участников более 50 исключается ООО. Если нужна ограниченная ответственность, ИП также исключается.</p></article>
+        <article class="about-card glass"><span class="step-label">02 / ПОЛУЧИТЕ ОБЪЯСНЕНИЕ</span><h2>Рекомендация с причинами</h2><p>Сначала проверяем ограничения, затем сравниваем оставшиеся формы по баллам соответствия. Масштаб, деятельность и способ инвестирования влияют на приоритет.</p><p>Публичное размещение акций ведёт к рекомендации ПАО. Крупный масштаб повышает приоритет АО, но сам по себе не запрещает ООО или ИП.</p></article>
+        <article class="about-card glass"><span class="step-label">03 / СДЕЛАЙТЕ СЛЕДУЮЩИЙ ШАГ</span><h2>От выбора к действию</h2><p>Сравните альтернативы, сохраните результат и уточните требования к своей деятельности. Дальше — выбор ОКВЭД, проверка лицензий и налогового режима, подготовка документов.</p><p>Это учебный инструмент, а не юридическое заключение. НПД — налоговый режим, а не отдельная организационно-правовая форма. Кооперативы и другие специальные формы в этой версии не рассматриваются.</p></article>
+        <article class="about-card glass sources-card"><span class="step-label">ОПОРА НА ИСТОЧНИКИ</span><h2>Проверить самостоятельно</h2><a href="https://www.nalog.gov.ru/rn77/ip/interest/reg_ip/" target="_blank" rel="noopener noreferrer">ФНС · Регистрация ИП <span>↗</span></a><a href="https://www.nalog.gov.ru/rn77/yul/interest/reg_yl/register/" target="_blank" rel="noopener noreferrer">ФНС · Регистрация организации <span>↗</span></a><a href="https://www.consultant.ru/document/cons_doc_LAW_17819/" target="_blank" rel="noopener noreferrer">14-ФЗ · Закон об ООО, ст. 2, 7, 14 <span>↗</span></a><a href="https://www.consultant.ru/document/cons_doc_LAW_8743/" target="_blank" rel="noopener noreferrer">208-ФЗ · Закон об АО, ст. 2, 7, 26 <span>↗</span></a><small>Базовые сведения проверены 11 ноября 2026 года. Перед регистрацией проверьте актуальную редакцию норм.</small></article></div>
+        <a href="#pick" class="primary-button compare-cta">Перейти к подбору <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </section>
+    </main>
+
+    <footer><a href="#pick" class="footer-brand">форма.</a><span>Пространство для вашего следующего шага</span><span class="footer-country">Сделано для идей в России <span>↗</span></span></footer>
+  </div>
+  <div id="toast" class="toast glass" role="status" hidden></div>
+</body>
+</html>
